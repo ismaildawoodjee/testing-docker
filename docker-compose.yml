@@ -5,7 +5,7 @@ services:
     # build: 
     #   context: ./
     #   dockerfile: Dockerfile
-    container_name: postgres-source
+    container_name: sourcedb1
     environment:
       POSTGRES_USER: sourcedb1
       POSTGRES_PASSWORD: sourcedb1

@@ -4,7 +4,7 @@ START_TIME=$(date +"%s")
 DATE_TIME=$(date +"%x %r %Z")
 echo -e "INFO: Started setup at $DATE_TIME\n"
 
-set -eo pipefail
+set -euxo pipefail
 
 REPO_NAME="testing-docker"
 
