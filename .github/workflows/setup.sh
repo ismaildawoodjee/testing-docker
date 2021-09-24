@@ -14,7 +14,14 @@ function initialize_great_expectations () {
         >> "./src/great_expectations/.gitignore"
 }
 
+function setup_docker_container () {
+    echo -e "INFO: Setting up Docker containers.\n"
+
+    sudo docker-compose up --build -d
+}
+
 initialize_great_expectations
+setup_docker_container
 
 END_TIME=$(date +"%s")
 DURATION=$((END_TIME - START_TIME))
