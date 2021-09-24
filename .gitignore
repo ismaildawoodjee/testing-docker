@@ -1,0 +1,15 @@
+# environment
+.venv
+.vscode
+temp
+*.env
+
+# tests
+htmlcov
+*.egg-info
+*.typed
+.coverage
+.tox
+__pycache__
+.mypy_cache
+.pytest_cache
