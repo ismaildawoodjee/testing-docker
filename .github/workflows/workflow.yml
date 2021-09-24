@@ -26,7 +26,7 @@ jobs:
           python -m pip install --upgrade wheel setuptools
           pip install -r requirements_dev.txt
       
-      - name: Run setup script
+      # - name: Run setup script
       - shell: bash
         run: |
           .github/workflows/setup.sh
