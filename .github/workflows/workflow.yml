@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest]
-        python-version: ['3.7', '3.8', '3.9']
+        python-version: ['3.9']
       fail-fast: true
 
     steps:
@@ -26,7 +26,6 @@ jobs:
           python -m pip install --upgrade wheel setuptools
           pip install -r requirements_dev.txt
       
-      # - name: Run setup script
       - shell: bash
         run: |
           .github/workflows/setup.sh
