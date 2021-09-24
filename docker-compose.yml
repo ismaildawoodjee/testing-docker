@@ -2,7 +2,9 @@ version: "3"
 services:
   postgres-source: 
     # image: postgres:latest
-    build: .github/workflows/Dockerfile
+    build: 
+      context: ./.github/workflows
+      dockerfile: Dockerfile
     container_name: postgres-source
     environment:
       POSTGRES_USER: sourcedb1

@@ -4,6 +4,8 @@ START_TIME=$(date +"%s")
 DATE_TIME=$(date +"%x %r %Z")
 echo -e "INFO: Started setup at $DATE_TIME\n"
 
+set -eo pipefail
+
 REPO_NAME="testing-docker"
 
 function initialize_great_expectations () {
